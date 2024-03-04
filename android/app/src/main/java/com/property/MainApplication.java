@@ -6,6 +6,12 @@ import android.util.Log;
 import com.facebook.react.ReactApplication;
 import com.inprogress.reactnativeyoutube.ReactNativeYouTube;
 import com.brentvatne.react.ReactVideoPackage;
+import com.oblador.vectoricons.VectorIconsPackage;
+import com.airbnb.android.react.maps.MapsPackage;
+import com.reactnative.ivpusic.imagepicker.PickerPackage;
+import com.microsoft.codepush.react.CodePush;
+import com.inprogress.reactnativeyoutube.ReactNativeYouTube;
+import com.brentvatne.react.ReactVideoPackage;
 import com.microsoft.codepush.react.CodePush;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.reactnative.ivpusic.imagepicker.PickerPackage;
@@ -36,6 +42,12 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new ReactNativeYouTube(),
+            new ReactVideoPackage(),
+            new VectorIconsPackage(),
+            new MapsPackage(),
+            new PickerPackage(),
+            new CodePush(null, getApplicationContext(), BuildConfig.DEBUG),
             new ReactNativeYouTube(),
             new ReactVideoPackage(),
             new CodePush(null, getApplicationContext(), BuildConfig.DEBUG),
