@@ -11,7 +11,7 @@ This version of the application is built with React Native
     git clone https://github.com/Quiveer/real-estate-mobile
     ```
 
-1. Navigate to the `real-estate-app-ui` directory:
+1. Navigate to the `real-estate-mobile` directory:
     ```
     cd real-estate-mobile
     ```
